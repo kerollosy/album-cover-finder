@@ -14,4 +14,4 @@ pip install -r requirements.txt
 ```
 python app.py
 ```
-5. Open the `app.html` file and type an album name in the input field
+5. Open the `app.html` file and type an album name in the input field then press enter
