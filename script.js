@@ -3,7 +3,7 @@ const album_container = document.getElementById("album-cover");
 
 album_name.addEventListener("keypress", (keypress) => {
     if (keypress.key == "Enter") {
-        fetch("http://localhost:5000/album?album_name=" + encodeURI(album_name.value))
+        fetch(`https://itunes.apple.com/search?term=${encodeURI(album_name.value)}&country=US&media=music&entity=album&limit=1`)
             .then(response => {
                 if (response.ok) {
                     return response.json();
